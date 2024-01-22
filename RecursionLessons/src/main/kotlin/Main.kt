@@ -5,15 +5,18 @@ fun main(args: Array<String>) {
     // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
     println("Program arguments: ${args.joinToString()}")
 
-
     // sums up the numbers from five down to 1
     val result = sumFrom(5)
     println("result: $result")
 
+
+    val solver = MaseSolver()
+    solver.columnwiseArrayTraversal()
+
 }
 
 fun sumFrom(n: Int): Int {
-    // Base Case
+    // Base Ca
     if (n === 1) {
         println("Base Case. End.")
         return 1;
